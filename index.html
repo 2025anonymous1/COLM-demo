@@ -22,11 +22,11 @@
         
         <section id="listening-examples">
             <h2>Listening Examples</h2>
-            <p>Below are some speech-to-speech conversion examples from our model.</p>
+            <p>Below are some speech-to-speech conversion examples from our model. Please note that all the user questions are pre-recorded and merged with agent response in a single audio.</p>
             
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Robustness with frequent interruption</h4>
+                    <h4>Robustness with user backchanneling & user barge-in & background noise. </h4>
 
                     <p><strong>Example-1: Travel place suggestion.</strong> User interrupts the agent three times in 15 seconds, and leaves limited time for the agent to respond. Note that user did not continue with “world trade center” but “Aspen” because user input is pre-recorded and fixed.</p>
                     <audio controls>
@@ -52,24 +52,8 @@
                         <source src="sample4.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
-
-                    <hr>
-                    <h4>Reasoning Problem</h4>
-
-                    <p><strong>Example-5: Q&A with summarization (unseen).</strong>Our SFT data does NOT include any explicit QA followed by summary format.</p>
-                    <audio controls>
-                        <source src="sample5.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-
-                    <hr>
-                    <p><strong>Example-6: Role-play with interruption.</strong></p>
-                    <audio controls>
-                        <source src="sample6.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-
-                    <hr>
+                    
+                   <hr>
                     <p><strong>Example-7: Distinguish user backchannling and user barge-in</strong></p>The agent keep speaking for user backchannle while stop speaking when user barge-in 
                     <audio controls>
                         <source src="sample7.wav" type="audio/wav">
@@ -82,6 +66,23 @@
                     <source src="sample8.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
+
+                    <hr>
+                    <h4>Reasoning Problem</h4>
+
+                    <p><strong>Example-5: Q&A with summarization (unseen).</strong> Our SFT data does NOT include any explicit QA followed by summary format.</p>
+                    <audio controls>
+                        <source src="sample5.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <hr>
+                    <p><strong>Example-6: Role-play with interruption.</strong></p>
+                    <audio controls>
+                        <source src="sample6.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+
                 </div>
             </div>
         </section>

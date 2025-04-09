@@ -26,7 +26,7 @@
             
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Robustness with user backchanneling & user barge-in & background noise. </h4>
+                    <h4>Robustness on user barge-in. </h4>
 
                     <p><strong>Example-1: Travel place suggestion.</strong> User interrupts the agent three times in 15 seconds, and leaves limited time for the agent to respond. Note that user did not continue with “world trade center” but “Aspen” because user input is pre-recorded and fixed.</p>
                     <audio controls>
@@ -39,38 +39,43 @@
                         <source src="sample2.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
+                    
                     <hr>
-                    <p><strong>Example-3: Multi-turn Chat on unseen topic.</strong> User selects random topic and interrupts agent for many times.</p>
-                    <audio controls>
-                        <source src="sample3.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                    </audio>
-
-                    <hr>
-                    <p><strong>Example-4: Impatient User.</strong> User interrupts agent within 2 second.</p>
+                    <p><strong>Example-3: Impatient User.</strong> User interrupts agent within 2 second.</p>
                     <audio controls>
                         <source src="sample4.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
+
+        
+                    <h4>Robustness on user backchanneling & noise. </h4>
+                    <hr>
                     
                    <hr>
-                    <p><strong>Example-5: Distinguish user backchannling and user barge-in</strong>.</p> 
+                    <p><strong>Example-4: Distinguish user backchannling and user barge-in</strong>.</p> 
                     <audio controls>
                         <source src="sample7.mp3" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
                     
                     <hr>
-                    <p><strong>Example-6: Handle user backchannling and user barge-in wit unseen noise.</strong></p> 
+                    <p><strong>Example-5: Handle user backchannling and user barge-in wit unseen noise.</strong></p> 
                     <audio controls>
                     <source src="sample8.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
 
                     <hr>
-                    <h4>Reasoning Problem</h4>
-
-                    <p><strong>Example-7: Q&A with summarization (unseen).</strong> Our SFT data does NOT include any explicit QA followed by summary format.</p>
+                    <h4>Other Spoken Topic</h4>
+                    <hr>
+                    <p><strong>Example-6: Multi-turn Chat on unseen topic.</strong> User selects random topic and interrupts agent for many times.</p>
+                    <audio controls>
+                        <source src="sample3.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    
+                    <hr>
+                    <p><strong>Example-8: Q&A with summarization (unseen).</strong> Our SFT data does NOT include any explicit QA followed by summary format.</p>
                     <audio controls>
                         <source src="sample5.wav" type="audio/wav">
                         Your browser does not support the audio element.
